@@ -32,3 +32,6 @@ p {
     border: 5px solid gray;
     box-shadow: 5px 10px #888888;
 }
+ul ol {
+    margin-left: 20px; /*indent ordered list off of unordered list */
+}

@@ -35,14 +35,21 @@
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-          <li>git pull origin main: ensures that my local main branch is up to date with the main branch in Github</li>
-          <li>git checkout main: Switches me to the main branch on my local machine</li>
-          <li>git add -A: adds all of the changes I have made to my next commit</li>
-          <li> git commit -m "inset commit comment": Commits the changes I have made as a new commit snapshot</li>
-          <li>git push origin branch-name: Transmits local branch commits to the remote repository</li>
+          <li><i>git branch</i> to get a list of all of your branches in the repo</li>
           <li><a href="https://education.github.com/git-cheat-sheet-education.pdf">Git Cheat Sheet</a></li>
+          <li>Step by Step guide to working on code locally and then merging those changes into a remote repo:</li>
+            <ol>
+              <li>use <i>git pull origin main</i> to ensure that my local main branch is up to date with the remote repo main branch in Github</li>
+              <li>use <i>git status</i> to check what branch I am are currently on</li>
+              <li>use <i>git checkout -b [branch-name]</i> to create a new branch and switch to it or use <i> git checkout [branch-name]</i> to switch to a different branch</li>
+              <li>make the changes that I want to make</li>
+              <li>test the changes locally and update documentation in README or in comments of HTML source code accordingly</li>
+              <li>use <i>git add -A</i> to add all of the changes I have made locally on the current branch to my next commit</li>
+              <li>use <i>git commit -m "inset commit comment"</i> to commit the changes I have made as a new commit snapshot with a comment</li>
+              <li>use <i>git push origin [branch-name]</i> to transmit my local branch commits to the remote repo</li>
+              <li>navigate to my <a href="https://github.com/coder-guy-pete/prework-study-guide">remote repo</a> and check the "pull requests" tab</li>
+              <li>select which branch I want to merge changes from (the branch I was working off of) which branch I want to merge to (likely the main branch, but does not have to be)</li>
+            </ol>
         </ul>
       </section>
       <section class="card" id="javascript-section">
