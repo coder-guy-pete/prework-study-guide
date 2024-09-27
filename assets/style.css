@@ -35,3 +35,20 @@ p {
 ul ol {
     margin-left: 20px; /*indent ordered list off of unordered list */
 }
+section h2 {
+    animation-play-state: paused; /* Pause the animation on hover */
+  }
+    section:hover h2 {
+    animation: bounce 0.8s infinite; /* Adjust the duration and iteration count as needed */
+    }
+    @keyframes bounce {
+        0% {
+        transform: translateY(0);
+        }
+        50% {
+        transform: translateY(-10px);
+        }
+        100% {
+        transform: translateY(0);
+        }
+    }

@@ -24,3 +24,19 @@ function selectTopic() {
   listTopics();
   console.log('Which topic should we study first?');
   selectTopic();
+
+// Get all sections
+const sections = document.querySelectorAll('section');
+
+// Add event listeners to each section
+sections.forEach(section => {
+  section.addEventListener('mouseover', () => {
+    // Highlight the section on hover
+    section.style.backgroundColor = '#d4d8d2';
+  });
+
+  section.addEventListener('mouseout', () => {
+    // Remove the highlight when the mouse leaves the section
+    section.style.backgroundColor = ''; // Reset the background color
+  });
+});
